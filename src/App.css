@@ -8,8 +8,15 @@ body {
 }
 
 .navbar-custom {
+
+    font-size: small !important;
+    
     a {
         color: #ffffff !important;
+    }
+
+    a:hover {
+        color: #5AB612 !important;
     }
 
     .navbar-info {
