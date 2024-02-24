@@ -22,11 +22,22 @@ body {
     .navbar-info {
         background-color: #49BEB7;
         padding: 0 10em !important;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em !important;
     }
     
     .navbar-main {
         background: linear-gradient(to right, #ffffff 7%, #085F63 50%);
         padding: 1.5em 13em !important;
+
+        .navbar-menu {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 12em !important;
+        }
     }
 
     .navbar-btn {

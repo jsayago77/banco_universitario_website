@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo-no-background.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLocationDot, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
 import {
     Collapse,
     Navbar,
@@ -21,13 +25,18 @@ function Header(args) {
         <div className='navbar-custom'>
             <Nav className='navbar-info'>
                 <NavItem>
-                    <NavLink href="/">Lunes - Viernes 8AM - 9PM</NavLink>
+                    <FontAwesomeIcon icon={faClock} />
+                    Lunes - Viernes 8AM - 9PM
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/">Av. Universidad, Edificio Banco Universitario, piso 12, Caracas, Venezuela</NavLink>
+                    <FontAwesomeIcon icon={faLocationDot} />
+                    Av. Universidad, Edificio Banco Universitario, piso 12, Caracas, Venezuela
                 </NavItem>
-                <NavItem>
-                    <NavLink href="/">Lunes - Viernes 8AM - 9PM</NavLink>
+                <NavItem className='navbar-Socials'>
+                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faLinkedin} />
                 </NavItem>
             </Nav>
             <Navbar container='fluid' expand='lg' full='true' className="navbar-main">
@@ -36,22 +45,28 @@ function Header(args) {
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
+                    <Nav className="me-auto navbar-menu" navbar>
                         <NavItem>
-                            <NavLink href="/">Inicio</NavLink>
+                            <NavLink href="/">
+                                <FontAwesomeIcon icon={faCircle} />
+                                Inicio
+                            </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/#servicios">
+                                <FontAwesomeIcon icon={faCircle} />
                                 Servicios
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/nosotros">
+                                <FontAwesomeIcon icon={faCircle} />
                                 Nosotros
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/contactanos">
+                                <FontAwesomeIcon icon={faCircle} />
                                 Contáctanos
                             </NavLink>
                         </NavItem>
