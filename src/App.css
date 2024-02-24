@@ -7,6 +7,10 @@ body {
     font-family: 'monserrat' !important;
 }
 
+.svg-inline--fa {
+    margin: 0 0.5em;
+}
+
 .navbar-custom {
 
     font-size: small !important;
@@ -33,10 +37,9 @@ body {
         padding: 1.5em 13em !important;
 
         .navbar-menu {
-            width: 90%;
             display: flex;
-            justify-content: space-around;
-            padding: 0 12em !important;
+            justify-content: space-evenly;
+            flex-basis: 50em;
         }
     }
 
@@ -44,14 +47,18 @@ body {
         background-color: #ffffff;
         color: #000000;
         border-radius: 5em;
-        padding: 0.5em 2em 0.5em 0.2em;
+        padding: 0.6em 2em 0.6em 0.2em;
+        display: flex;
+        align-items: center;
+        font-size: small;
 
-        i {
-            display: inline-block;
-            background-color: #085F63;
+        .banca-btn-icon {
+            color: #ffffff;
+            background-color: #49BEB7;
             border-radius: 100%;
-            padding: 0 0.4em;
-            margin: 0.5em;
+            padding: 0.3em;
+            margin: 0 0.2em;
+            transform: rotate(42deg);
         }
     }
 }
