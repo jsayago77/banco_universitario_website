@@ -5,6 +5,7 @@
 
 body {
     font-family: 'monserrat' !important;
+    overflow-x: hidden;
 }
 
 .svg-inline--fa {
@@ -63,6 +64,26 @@ body {
     }
 }
 
+.banca-online-btn {
+    background-color: #085F63 !important;
+    color: #ffffff !important;
+    border-radius: 5em !important;
+    padding: 0.6em 2em 0.6em 0.2em !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: small !important;
+    width: 70% !important;
+
+    .banca-btn-icon {
+        color: #ffffff;
+        background-color: #49BEB7;
+        border-radius: 100%;
+        padding: 0.3em;
+        margin: 0 0.2em;
+        transform: rotate(42deg);
+    }
+}
+
 .footer-custom {
     background-color: #085F63;
     color: #ffffff !important;
@@ -74,4 +95,134 @@ body {
     li {
         padding: 0.5em 0;
     }
+}
+
+.background-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: opacity(90%);
+}
+
+.card-custom {
+    z-index: 50;
+    position: absolute;
+    width: fit-content;
+
+    top: 19em;
+    left: 54em;
+
+    .card-title {
+        font-size: 2.5em;
+    }
+
+    .card{
+        width: fit-content;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2.5em;
+    }
+
+    button {
+        background-color: #085F63;
+        border-radius: 20px;
+        width: 70%;
+        padding: 1em;
+        font-size: small;
+    }
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services-grid-container {
+    padding: 0 25em !important;
+}
+
+.titles-section {
+    display: flex;
+    justify-content: center;
+}
+.mini-title {
+    padding: 0.2em;
+    font-size: small;
+    color: #ffffff;
+    background-color: #49BEB7;
+    border-radius: 20px;
+    width: fit-content !important;
+    letter-spacing: .2em;
+}
+
+.big-title {
+    font-weight: bolder;
+}
+
+.medium-title {
+    font-weight: bold;
+}
+
+.services-card {
+    background-color: #49BEB7 !important;
+    padding: 3em 2em 3em 3em;
+    text-align: left;
+    font-size: small;
+    border: none !important;
+    height: 98% !important;
+
+    .card-title {
+        margin: 1em 0;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    img {
+        width: 23%;
+    }
+}
+
+.last-service {
+    padding: 3em 0 0 3em !important;
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+
+    div {
+        padding-bottom: 1em;
+        z-index: 3;
+
+        .card-text {
+            padding-bottom: 2em;
+        }
+    }
+
+
+    img {
+        width: 16%;
+    }
+
+    .back-image {
+        z-index: 1;
+        width: auto;
+        padding: 0.7em 0;
+        margin: 0;
+        border-radius: 1rem;
+        filter: opacity(70%);
+    }
+}
+
+.process {
+    padding: 0 16em !important;
+    margin: 6em;
+
+    img { 
+        width: 42em;
+        padding: 3em;
+    }
+}
+
+.process-desc {
+    margin: 1.6em 0 !important;
 }
