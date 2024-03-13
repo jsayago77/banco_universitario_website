@@ -26,22 +26,22 @@ function Main(args) {
             <Row>
                 <Col className='background-image'>
                     <img src={mainContent} />
-                </Col>
-                <Col className='card-custom'>
-                    <Card body>
-                        <CardTitle tag="h3">
-                            <b>Tus finanzas en <br /> nuestas manos</b>
-                        </CardTitle>
-                        <CardText>
-                            El único banco de Venezuela sólo para <br /> universitarios, ven y conoce los servicios que <br /> ofrecemos para ti.
-                        </CardText>
-                        <Button>
-                            Conoce más sobre nosotros
-                        </Button>
-                    </Card>
+                    <Row className='card-custom'>
+                        <Card body>
+                            <CardTitle tag="h3">
+                                <b>Tus finanzas en <br /> nuestas manos</b>
+                            </CardTitle>
+                            <CardText>
+                                El único banco de Venezuela sólo para <br /> universitarios, ven y conoce los servicios que <br /> ofrecemos para ti.
+                            </CardText>
+                            <Button>
+                                Conoce más sobre nosotros
+                            </Button>
+                        </Card>
+                    </Row>
                 </Col>
             </Row>
-            <Row>
+            <Row id="servicios">
                 <Col className='services-container my-5'>
                     <Row className='titles-section'>
                         <h6 className='mini-title'>SERVICIOS</h6>
@@ -50,7 +50,7 @@ function Main(args) {
                     </Row>
                     <Row className='services-grid-container'>
                         <Row className='px-0'>
-                            <Col className='px-0 pe-3'>
+                            <Col className='px-0 pe-sm-3 pe-0'>
                                 <Card className='services-card rounded-4'>
                                     <div></div>
                                     <img src={transfers} alt="Transferencias entre estudiantes" />
@@ -68,7 +68,7 @@ function Main(args) {
                             </Col>
                         </Row>
                         <Row className='px-0'>
-                            <Col className='px-0 pe-3'>
+                            <Col className='px-0 pe-sm-3 pe-0'>
                                 <Card className='services-card rounded-4'>
                                     <div></div>
                                     <img src={withdraws} alt="Retiros en efectivo" />

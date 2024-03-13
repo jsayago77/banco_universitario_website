@@ -3,9 +3,9 @@
     src: url('./assets/montserrat_alternates_regular.ttf');
 }
 
-body {
+html, body {
     font-family: 'monserrat' !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .svg-inline--fa {
@@ -34,8 +34,9 @@ body {
     }
     
     .navbar-main {
+        z-index: 10;
         background: linear-gradient(to right, #ffffff 7%, #085F63 50%);
-        padding: 1.5em 13em !important;
+        padding: 5vh 10vw;
 
         .navbar-menu {
             display: flex;
@@ -72,7 +73,7 @@ body {
     display: flex !important;
     align-items: center !important;
     font-size: small !important;
-    width: 70% !important;
+    width: fit-content !important;
 
     .banca-btn-icon {
         color: #ffffff;
@@ -98,19 +99,20 @@ body {
 }
 
 .background-image img {
-    height: 100%;
+    
     width: 100%;
     object-fit: contain;
     filter: opacity(90%);
 }
 
 .card-custom {
-    z-index: 50;
+    z-index: 3;
     position: absolute;
     width: fit-content;
+    max-width: fit-content;
 
-    top: 19em;
-    left: 54em;
+    top: 50%;
+    left: 60%;
 
     .card-title {
         font-size: 2.5em;
@@ -140,7 +142,7 @@ body {
 }
 
 .services-grid-container {
-    padding: 0 25em !important;
+    padding: 0 25% !important;
 }
 
 .titles-section {
@@ -214,7 +216,7 @@ body {
 }
 
 .process {
-    padding: 0 16em !important;
+    padding: 0 10em !important;
     margin: 6em;
 
     img { 
@@ -225,4 +227,142 @@ body {
 
 .process-desc {
     margin: 1.6em 0 !important;
+}
+
+@media (max-width: 1272px) {
+
+    body {
+        font-size: 90%;
+    }
+
+    .navbar-main {
+        padding: 5vh 3vw !important;
+    }
+
+    .card-custom {
+        top: 60%;
+        left: 50%;
+
+    }
+
+    .services-grid-container {
+        padding: 0 20% !important;
+    }
+
+    .back-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .navbar-info {
+
+    }
+ 
+    .card-custom {
+        top: 40%;
+        left: 30%;
+    }
+
+    .services-grid-container {
+        padding: 0 15% !important;
+    }
+}
+
+@media (max-width: 861px) {
+    
+    .card-custom {
+        font-size: 70% !important;
+        top: 40%;
+        left: 35%;
+
+        button {
+            font-size: 80% !important;
+            width: auto !important;
+        }
+    }
+
+    .process {
+        padding: 0 5em !important;
+        
+        img {
+            width: 90vw;
+        }
+    }
+
+
+}
+
+@media (max-width: 635px) {
+    
+    .card-custom {
+        font-size: 50% !important;
+        top: 45%;
+        left: 35%;
+
+        button {
+            width: auto !important;
+        }
+    }
+
+    .services-grid-container {
+        padding: 0 25% !important;
+    }
+
+    .footer-custom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 508px) {
+
+    .card-custom {
+        font-size: 40% !important;
+        top: 45%;
+        left: 35%;
+
+        button {
+            width: auto !important;
+        }
+    }
+
+    .footer-custom .row {
+       margin: 0;
+       padding: 3rem 0 !important;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .navbar-main {
+        padding: 2vh 10vw !important;
+    }
+    .navbar-brand {
+        width: 60% !important;
+
+        img {
+            width:70% !important;
+        }
+    }
+    
+    .card-custom {
+        font-size: 37% !important;
+        top: 27%;
+        left: 30%;
+
+        button {
+            width: auto !important;
+        }
+    }
+
+    .services-grid-container {
+        padding: 0 20% !important;
+    }
+ 
 }
