@@ -313,6 +313,14 @@ html, body {
         padding: 0 25% !important;
     }
 
+    .last-service {
+        padding: 3em 2em 0 3em !important;
+    }
+
+    .back-image {
+        display: none;
+    }
+
     .footer-custom {
         flex-direction: column;
         text-align: center;
