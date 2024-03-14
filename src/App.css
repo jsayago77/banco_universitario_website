@@ -150,7 +150,7 @@ html, body {
     justify-content: center;
 }
 .mini-title {
-    padding: 0.2em;
+    padding: 0.2em 0.6em;
     font-size: small;
     color: #ffffff;
     background-color: #49BEB7;
