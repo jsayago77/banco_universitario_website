@@ -25,7 +25,7 @@ function Nosotros(args) {
                 </Col>
                 <Col className='card-custom start-0 ms-5'>
                     <Card body>
-                        <h6 className='mini-title'>NOSOTROS</h6>
+                        <h6 className='mini-title text-black'>NOSOTROS</h6>
                         <h2 className='big-title'>Más que un banco, <br /> somos una familia.</h2>
                     </Card>
                 </Col>
@@ -34,7 +34,7 @@ function Nosotros(args) {
                 <Col md="8">
                     <Card>
                         <img src={overview} alt="Overview" />
-                        <CardBody className='services-card'>
+                        <CardBody className='services-card' style={{ backgroundColor: 'rgb(73, 190, 183, 0.7)' }}>
                             <CardSubtitle className="mb-2 text-muted" tag="h6">
                                 NOSOTROS
                             </CardSubtitle>
