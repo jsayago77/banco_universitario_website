@@ -24,5 +24,5 @@ npm run dev
 Para crear el build del proyecto ejecutar:
 
 ~~~
-`npm run build`
+npm run build
 ~~~
