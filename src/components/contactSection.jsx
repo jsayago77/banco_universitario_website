@@ -1,3 +1,16 @@
+import {
+  Row,
+  Col,
+  Card,
+  CardHeader,
+  CardBody,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button
+} from 'reactstrap';
+
 import Check from '../assets/check.svg'
 import Contact2 from '../assets/contact2.png'
 import Icon5 from '../assets/icon-5.svg'
@@ -54,8 +67,8 @@ const ContactSection = () => {
               <div className="time-frame">
                 <div className="mon-fri-text">
                   <div className="open-close-times">
-                    <div className="address-frame">
-                      <b className="contact-infobox-title">1128+</b>
+                    <div className="address-frame text-center">
+                      <b className="contact-infobox-title fs-1">1128+</b>
                     </div>
                     <div className="trabajos-satisfactorios">
                       Trabajos satisfactorios
@@ -63,7 +76,7 @@ const ContactSection = () => {
                   </div>
                   <div className="open-close-times1">
                     <div className="wrapper">
-                      <b className="b">50+</b>
+                      <b className="b fs-1">50+</b>
                     </div>
                     <div className="miembros-del-equipo">
                       Miembros del Equipo
@@ -71,7 +84,7 @@ const ContactSection = () => {
                   </div>
                   <div className="open-close-times2">
                     <div className="container">
-                      <b className="b1">258+</b>
+                      <b className="b1 fs-1">258+</b>
                     </div>
                     <div className="estudiantes-felices">
                       Estudiantes Felices
@@ -132,98 +145,90 @@ const ContactSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="form">
+                <Form>
                   <div className="semicolon-divider">
-                    <div className="nombre-completo-field">
-                      <div className="nombre-completo">Nombre Completo</div>
+                    <FormGroup>
+                      <Label>Nombre Completo</Label>
                       <div className="text1">
-                        <input
-                          className="chela-martinez"
-                          placeholder="Ingresa tu nombre"
+                        <Input
+                          className='rounded-pill p-3'
+                          placeholder="Nombre"
                           type="text"
                         />
                       </div>
-                    </div>
-                    <div className="tu-compania">
-                      <div className="email">Email</div>
+                    </FormGroup>
+                    <FormGroup>
+                      <Label>Email</Label>
                       <div className="text2">
-                        <input
-                          className="chelamartinez20gmailcom"
-                          placeholder="ingresa tu email"
-                          type="text"
+                        <Input
+                          className='rounded-pill p-3'
+                          placeholder="example@mail.com"
+                          type="email"
                         />
                       </div>
-                    </div>
+                    </FormGroup>
                   </div>
                   <div className="semicolon-divider1">
-                    <div className="div">
-                      <div className="telfono">Teléfono</div>
+                    <FormGroup>
+                      <Label>Teléfono</Label>
                       <div className="text3">
-                        <input
-                          className="input"
-                          placeholder="Ingresa tu telefóno"
+                        <Input
+                          className='rounded-pill p-3'
+                          placeholder="0000-000-0000"
                           type="text"
                         />
                       </div>
-                    </div>
-                    <div className="div1">
-                      <div className="empresaopcional">Empresa/opcional</div>
+                    </FormGroup>
+                    <FormGroup>
+                      <Label>Empresa (opcional)</Label>
                       <div className="text4">
-                        <input
-                          className="tucompaniacom"
-                          placeholder="tucompania.com"
+                        <Input
+                          className='rounded-pill p-3'
+                          placeholder="tucompania"
                           type="text"
                         />
                       </div>
-                    </div>
+                    </FormGroup>
                   </div>
-                  <div className="button-element">
+                  <FormGroup>
                     <div className="message">
-                      <div className="mensaje">Mensaje</div>
-                      <textarea className="text5" rows={8} cols={33} />
+                      <Label>Mensaje</Label>
+                      <Input className='p-3' type="textarea" />
                     </div>
-                  </div>
-                  <button className="button2">
+                  </FormGroup>
+                  <Button className="rounded-pill p-3 button2" style={{ backgroundColor: "#085F63" }}>
                     <div className="enviar-mensaje">Enviar Mensaje</div>
-                  </button>
-                </div>
+                  </Button>
+                </Form>
               </div>
             </div>
           </div>
-          <div className="frame-container">
-            <div className="newsletter">
-              <img className="background-icon" alt="" src={Background} />
-              <img
-                className="background-icon1"
-                loading="lazy"
-                alt=""
-                src={Background}
-              />
-              <div className="design-foundation">
-                <h2 className="quieres-aserora-personalizada">
-                  ¿Quieres Aseroría personalizada?
-                </h2>
-                <b className="te-contactremos-por">
-                  Te contactáremos por correo electrico para darte un recorrido
-                  por la aplicación
-                </b>
+          <Row className="frame-container justify-content-center my-4 p-5 rounded-4">
+            <img className="background-icon" alt="" src={Background} />
+            <Col className="design-foundation">
+              <h2 className="quieres-aserora-personalizada text-white fs-3">
+                ¿Quieres Aseroría personalizada?
+              </h2>
+              <b className="te-contactremos-por text-white">
+                Te contactáremos por correo electrico para darte un recorrido
+                por la aplicación
+              </b>
+            </Col>
+            <Col className="content-parent flex-row p-3">
+              <div className="">
+                <Input
+                  className="rounded-pill p-3"
+                  placeholder="Tu correo electrónico"
+                  type="text"
+                />
               </div>
-              <div className="content-parent">
-                <div className="copyright-section">
-                  <input
-                    className="tu-correo-electrnico"
-                    placeholder="Tu correo electrónico"
-                    type="text"
-                  />
-                </div>
+              <div className="px-4">
+                <Button className=" rounded-pill p-3 px-5" style={{ backgroundColor: "#085F63" }}>
+                  Enviar
+                </Button>
               </div>
-              <div className="enviar-button">
-                <button className="button3">
-                  <div className="enviar">Enviar</div>
-                </button>
-              </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </section>
     </>

@@ -36,7 +36,7 @@ html, body {
     .navbar-main {
         z-index: 10;
         background: linear-gradient(to right, #ffffff 7%, #085F63 50%);
-        padding: 5vh 10vw;
+        padding: 3vh 10vw;
 
         .navbar-menu {
             display: flex;
