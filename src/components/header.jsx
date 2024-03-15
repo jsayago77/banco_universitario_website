@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo-no-background.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -47,28 +48,28 @@ function Header(args) {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto navbar-menu" navbar>
                         <NavItem>
-                            <NavLink href="/">
+                            <Link className='nav-link' to="/">
                                 <FontAwesomeIcon icon={faCircle} size='xs' />
                                 Inicio
-                            </NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/#servicios">
+                            <Link className='nav-link' to="/#servicios">
                                 <FontAwesomeIcon icon={faCircle} size='xs' />
                                 Servicios
-                            </NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/nosotros">
+                            <Link className='nav-link' to="/nosotros">
                                 <FontAwesomeIcon icon={faCircle} size='xs' />
                                 Nosotros
-                            </NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/contactanos">
+                            <Link className='nav-link' to="/contactanos">
                                 <FontAwesomeIcon icon={faCircle} size='xs' />
                                 Contáctanos
-                            </NavLink>
+                            </Link>
                         </NavItem>
                     </Nav>
                     <NavbarText>
