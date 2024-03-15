@@ -1,14 +1,15 @@
 import { Container } from 'reactstrap';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Nosotros from '../components/nosotros';
+import Nosotross from '../components/nosotros';
+import '../App.css'
 
-export default function Home(){
+export default function Nosotros(){
     return (
       <>
         <Container fluid className='p-0'>
           <Header />
-          <Nosotros />
+          <Nosotross />
           <Footer />
         </Container>
       </>
